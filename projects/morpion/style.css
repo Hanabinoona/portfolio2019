@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Caveat+Brush');
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Caveat Brush', sans-serif;
+}
+/*page 0*/
+.page0{
+  z-index: 1;
+}
+#facile, #moyen, #choix1joueur, #choix2joueurs, #valid, #soloName, #select, #joueur1Name, #joueur2Name{
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  font-size: 1.5em;
+  background: #CBE0F6;
+  border: none;
+  cursor: pointer;
+}
+#facile:hover, #moyen:hover, #choix1joueur:hover, #choix2joueurs:hover, #valid:hover, #select:hover{
+  background: #B5D3F2;
+}
+#soloName, #joueur1Name, #joueur2Name{
+  background: #F6FAFD;
+}
+/*commun*/
+.nbJoueurs, #niveau, .nomJoueurs, .sign{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 400px;
+}
+
+/*page 2*/
+.page1, .page2, .page3, .page4, .page2Joueur1{
+  display: none;
+}
+.page1.visible, .page2.visible, .page2Joueur1.visible{
+  z-index: 2;
+}
+.page0, .page1.visible, .page2.visible, .page3.visible, .page4.visible, .page2Joueur1.visible{
+  position: fixed;
+  width: 100%;
+  height: 70vh;
+  background : #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+/*page3 */
+.page3.visible{
+  z-index: 3;
+}
+#clickRond, #clickCroix{
+  width: 50px;
+  height: 50px;
+}
+#clickRond{
+  background: url('cercle.png') no-repeat center;
+}
+#clickCroix{
+  background: url('croix.png') no-repeat center;
+}
+/*page4 */
+.page4.visible{
+  background: #fff;
+  z-index: 4;
+  height: 90vh;
+}
+.td{
+  border: 1px solid #000;
+  width: 100px;
+  height: 100px;
+}
+.td.rond{
+  background: url('cercle.png') no-repeat center;;
+}
+.td.croix{
+  background: url('croix.png') no-repeat center;
+}
+.table{
+  border-collapse: collapse;
+}
+#recommencer{
+  display: none;
+}
+#recommencer.visible{
+  display: block;
+}
+
+
+@media screen and (max-width: 600px){
+  .td{
+    width: 70px;
+    height: 70px;
+  }
+}

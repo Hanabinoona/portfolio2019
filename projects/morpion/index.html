@@ -1,0 +1,84 @@
+<!doctype>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css">
+    <title>Morpion</title>
+  </head>
+  <body>
+      <!--page 0 -->
+      <div class="page0">
+        <h1>Bienvenue, joueur de morpion !</h1>
+        <h2>Choisissez votre niveau :</h2>
+        <div id="niveau">
+          <div id="facile">
+              Facile
+          </div>
+          <div id="moyen">
+            Moyen
+          </div>
+        </div>
+      </div>
+      <!--page 1 -->
+      <div class="page1">
+        <h1>Combien êtes vous ?</h1>
+        <div class="nbJoueurs">
+          <p id="choix1joueur">
+            Un joueur
+          </p>
+          <p id="choix2joueurs">
+            Deux joueurs
+          </p>
+        </div>
+      </div>
+
+      <!--page2- un joueur-->
+      <div class="page2Joueur1">
+        <h1>Donnez moi votre nom :</h1>
+        <div class="nomJoueurs">
+          <input type="text" placeholder="Votre nom" id="soloName"/>
+          <div id="select">
+            Valider
+          </div>
+        </div>
+      </div>
+
+
+
+      <!--page 2 -->
+      <div class="page2">
+        <h1>Indiquez le nom des joueurs :</h1>
+        <div class="nomJoueurs">
+          <input type="text" placeholder="Joueur 1" id="joueur1Name"/>
+          <input type="text" placeholder="Joueur 2" id="joueur2Name"/>
+          <div id="valid">
+            Valider
+          </div>
+        </div>
+      </div>
+
+      <!--page 3 -->
+      <div class="page3">
+        <div class="bienvenue"></div>
+        <h1 id="choixSign"></h1>
+        <div class="sign">
+            <div id="clickRond"></div>
+            <div id="clickCroix"></div>
+        </div>
+      </div>
+
+
+      <!--page 4 -->
+      <div class="page4">
+        <h1>Jouons !</h1>
+        <table class="table">
+        </table>
+        <button id="recommencer">Recommencer</button>
+      </div>
+
+
+
+
+      <script type="text/javascript" src="main2.js"></script>
+  </body>
+</html>
