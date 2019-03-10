@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Écume</title>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" type="text/css" href="css/general.css">
+		<link rel="stylesheet" type="text/css" href="css/pages.css">
+		<link rel="stylesheet" type="text/css" href="css/email-petit.css">
+		<link rel="icon" type="image/png" href="img/flavicon.png">
+	    <script src="index.js"></script>
+	</head>
+	<body>
+		<header>
+			<a href="index.html">
+				<img src="img/logo.png" alt='logo' id="logo"/>
+			</a>
+		</header>
+		<nav class="button" id="button">
+			<img src="img/menu.png" />
+			<div id="menu">
+				<ul>
+					<li><a href="#agence">Agence</a></li>
+					<li><a href="#real">Réalisations</a></li>
+					<li><a href="#membres">Membres</a></li>
+					<li><a href="#contacts">Contacts</a></li>
+				</ul>
+			</div>
+		</nav>
+		<section>
+			<form action="mail.php" method="post" class="form">
+				<div class="boites">
+					<input name="prenom" placeholder="Votre nom et prénom" id="nom"></input>
+					<input name="email" placeholder="Votre email" id="email"></input>
+					<input name="sujet" placeholder="Le sujet de votre message" id="sujet"></input>
+				</div>
+				<textarea name="message" placeholder="Votre message" id="message"></textarea>
+
+
+			</form>
+			<button id="bouton">Envoyer</button>
+
+		</section>
+		<p class="valid" id="valid">Le message a bien été envoyé</p>
+		<p class="error" id="error">Le message n'a pas été envoyé</p>
+		<footer class="contacts" id="contacts">
+				<div class="lien">
+					<a href="https://www.facebook.com/AgenceComEcume/" target="_blank" title="Facebook" id="facebook">
+						<img src="img/fb.png">
+					</a>
+					<a href="https://twitter.com/Agence_Ecume" target="_blank" title="Twitter" id="twitter">
+						<img src="img/tw.png">
+					</a>
+					<a href="https://www.instagram.com/agence_ecume/" target="_blank" title="Instagram" id="instagram">
+						<img src="img/insta.png">
+					</a>
+				</div>
+		</footer>
+
+		<script>
+			//document.getElementById("header").style.width = window.innerWidth+"px";
+		</script>
+		<script src="mail.js"></script>
+	</body>
+</html>

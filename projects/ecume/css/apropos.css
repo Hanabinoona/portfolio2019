@@ -1,0 +1,41 @@
+article{
+	text-align: center;
+}
+.bleu img, .rose img, .nom{
+	display: inline-block;
+}
+.bleu img, .rose img{
+	height: 280px;
+	width: auto;
+}
+.bleu, .rose{
+	margin-top: 30px;
+}
+.text1, .text2{
+	text-align: justify;
+}
+.presentation{
+	color: rgb(194, 164, 110);
+	text-align: center;
+}
+h2{
+	text-align: center;
+}
+#chloe{
+	margin-bottom: 30px;
+}
+@media screen and (min-width: 610px) and(max-width: 1100px){
+	.nom{
+		width: 50%;
+	}
+}
+@media screen and (min-width: 1100px){
+	.bleu img, .rose img{
+		height: 350px;
+		width: auto;
+	}
+	.nom{
+		margin-left: 30px;
+		width: 60%;
+	}
+}

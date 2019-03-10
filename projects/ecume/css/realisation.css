@@ -1,0 +1,72 @@
+section{
+	text-align: center;
+}
+.div .one, .div .two, .div .three, .div .four, .div .five, .div .six, .div .sept{
+	display:inline-block;
+	background-color: rgba(19, 28, 46, 0.7);
+	margin: 10px;
+}
+.div{
+	display: inline-block;
+	position: relative;
+}
+#one {
+	width: 300px;
+	height:300px;
+	display:inline-block;
+	background-color:  rgba(19, 28, 46, 0.7);
+	margin: 10px;
+}
+#one img{
+	height: 300px;
+	width: auto;
+	display: block;
+	margin: 0 auto;
+}
+.div p{
+	display: none;
+	position: absolute;
+	top: 50;
+	left: 50;
+	right: 50;
+}
+.div .real{
+	top: 200;
+}
+.div .background{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 320px;
+	height: 320px;
+	background : rgba(255, 255, 255, 0.8);
+	display: none;
+}
+.div:hover p, .div:hover .background, .div:hover .real{
+	display: block;
+}
+footer{
+	position: static;
+}
+@media screen and (max-width: 500px){
+	.one, .two, .three, .four, .five, .six, #one{
+		width: 200px;
+		height: auto;
+	}
+	#one img{
+		height: 200px;
+		width: auto;
+	}
+	.div p{
+		top: 10;
+		left: 20;
+		right: 20;
+	}
+	.div .real{
+		top: 150;
+	}
+	.div .background{
+		width: 210px;
+		height: 210px;
+	}
+}

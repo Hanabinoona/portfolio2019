@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css?family=Patrick+Hand');
+
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  font-family: 'Patrick Hand', sans-serif;
+  font-size: 1.5em;
+  display: flex;
+}
+#gauche, #droite{
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#gauche{
+  flex-direction: column;
+}
+#gauche p{
+  padding-bottom: 10px;
+}
+#gauche #input-surname{
+  border-radius: 5px;
+  padding: 5px;
+  text-align: center;
+  font-size: 0.8em;
+  font-family: 'Patrick Hand', sans-serif;
+}
+#droite{
+  background: #ccc;
+}
+
+#droite span{
+  padding-left: 5px;
+}
+#name{
+  font-size: 3em;
+  margin-bottom: 60px;
+}

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Écume-accueil</title>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" type="text/css" href="css/general.css">
+		<link rel="stylesheet" type="text/css" href="css/presentation.css">
+		<link rel="icon" type="image/png" href="img/flavicon.png">
+    	<script src="index.js"></script>
+	</head>
+	<body>
+		<nav class="button" id="button">
+			<img src="img/menu.png" />
+			<div id="menu">
+				<ul>
+					<li><a href="#agence">Agence</a></li>
+					<li><a href="#real">Réalisations</a></li>
+					<li><a href="#membres">Membres</a></li>
+					<li><a href="#contacts">Contacts</a></li>
+				</ul>
+			</div>
+		</nav>
+		<header id="header">
+			<img src="img/logo.png" alt='logo' id="logo"/>
+		</header>
+		<section>
+			<article>
+				<div class="agence" id="agence">
+					<h1>Qui sommes nous ?</h1>
+					<p>
+						Écume est une agence de communication orientée sur le raffinement et le secteur du luxe. C’est l’association de six personnes expérimentées, passionnées qui s’investissent pleinement dans chaque projet afin de le rendre unique en son genre.
+					</p>
+					<p class="p">
+						Nous sommes une agence fictive créée dans le cadre des projets tutorés de notre DUT MMI.
+					</p>
+				</div>
+				<div class="video">
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/TXskgmZngik" frameborder="0" allowfullscreen></iframe>
+				</div>
+				<p class="text"><a href="agence.html">Mieux nous connaître !</a></p>
+			</article>
+			<article id="real">
+				<h1 class="realh1">Quelques réalisations</h1>
+				<div class="real">
+					<div class="img"><img src="img/affiche1.png" class="divun" id="divone" /></div>
+					<div class="img"><img src="img/statue.png" class="divun" id="divdeux" /></div>
+					<div class="img"><img src="img/versace.png" class="divun" id="divtrois" /></div>
+				</div>
+				<p class="text"><a href="realisation.html">Voir plus !</a></p>
+			</article>
+			<article class="membres" id="membres">
+				<h1>Notre équipe</h1>
+				<img src="img/groupe3.png" class="divmembre" />
+				<p class="text"><a href="apropos.html">En savoir plus !</a></p>
+			</article>
+		</section>
+		<footer class="contacts" id="contacts">
+				<div>
+					<img src="img/map.png" id="map"/>
+					<img src="img/map1.png"  id="mapun" />
+					<div class="carte">
+						<script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script>
+						<div style='overflow:hidden;height:300px;width:800px;'>
+							<div id='gmap_canvas' style='height:300px;width:800px;'></div>
+								<div>
+									<small>
+									<a href="http://embedgooglemaps.com">									google maps carte							</a>
+									</small>
+								</div>
+								<div><small><a href="http://youtubeembedcode.com">embed youtube code</a></small></div>
+								<style>#gmap_canvas img{max-width:none!important;background:none!important}</style>
+							</div>
+							<script type='text/javascript'>function init_map(){var myOptions = {zoom:15,center:new google.maps.LatLng(49.2848526,1.005471899999975),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(49.2848526,1.005471899999975)});infowindow = new google.maps.InfoWindow({content:'<strong>Agence Écume</strong><br>24, Cours gambetta - 76 500 ELBEUF<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);
+							</script>
+					</div>
+				</div>
+				<article>
+					<div id="adresse">
+						<p>Agence Écume </p><br/>
+						<p>24, Cours gambetta- 76500 ELBEUF
+					</div>
+					<div class="lien">
+						<a href="https://www.facebook.com/AgenceComEcume/" target="_blank" title="Facebook" id="facebook">
+							<img src="img/fb.png">
+						</a>
+						<a href="https://twitter.com/Agence_Ecume" target="_blank" title="Twitter" id="twitter">
+							<img src="img/tw.png">
+						</a>
+						<a href="https://www.instagram.com/agence_ecume/" target="_blank" title="Instagram" id="instagram">
+							<img src="img/insta.png">
+						</a>
+						<a href="email.html" id="mail" title="envoyer un e-mail">
+							<img src="img/mail.png">
+						</a>
+					</div>
+				</article>
+			</footer>
+		<script>
+			document.getElementById("header").style.height = window.innerHeight+"px";
+		</script>
+		<script src="presentation.js"></script>
+	</body>
+</html>

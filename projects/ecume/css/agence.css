@@ -1,0 +1,51 @@
+*{
+	text-align: center;
+}
+section{
+	padding: 30px 12.5% 0 12.5%;
+}
+.video{
+	margin-top: 4%;
+	margin-bottom: 4%;
+}
+.video iframe{
+	width: 750px;
+	height: 450px;
+}
+#un, #deux{
+	line-height: 1.5em;
+}
+#un{
+	
+	word-spacing:4px;
+}
+#deux{
+	margin-top:7%;
+	word-spacing:2px;
+}
+#rectangle{
+	margin:0 auto;
+	margin-top:7%;
+	background-color:#131C2E;
+	width:30%;
+	height:2.5px;
+}
+@media screen and (max-width: 1000px){
+	section{
+		padding: 0;
+	}
+	.video iframe{
+		width: 50%;
+		height: 50%;
+	}
+}
+
+@media screen and (max-width: 700px){
+	.video iframe{
+		width: 225px;
+		height: 135px;
+	}
+	#un, #deux{
+		word-spacing: 2px;
+	}
+}

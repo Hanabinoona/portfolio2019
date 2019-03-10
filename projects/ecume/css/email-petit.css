@@ -1,0 +1,98 @@
+footer{
+	position: fixed;
+}
+textarea, input {
+   resize: none;
+   text-align: center;
+   border-radius: 10px;
+}
+#nom{
+	margin-top: 0;
+}
+#email, #sujet, #nom{
+	width: 100%;
+	display: block;
+	height: 50px;
+	margin: 10px 0;
+	border: 0.2em solid #131C2E;
+}
+#message{
+	width: 100%;
+	height: 200px;
+	margin: 10px 0;
+	border: 0.15em solid #131C2E;
+}
+button{
+	text-decoration: none;
+	background: #131C2E;
+	color: #CFDCE4;
+	margin: 10px 0 50px 0;
+	border-radius: 10px;
+	box-shadow: 2px 2px 3px #131C2E;
+	width: 140px;
+	height: 50px;
+	font-size: 1.7em;
+	position: relative;
+  	overflow: hidden;
+  	transition: 0.5s ease;
+}
+button::before{
+	content: '';
+}
+button::after {
+  content: '';
+  position: absolute;
+  top: -30%;
+  right: -30%;
+  bottom: -30%;
+  left: -30%;
+  background: linear-gradient(to bottom, rgba(207, 220, 228, 0), rgba(255,255,255,0.5) 50%, rgba(207, 220, 228, 0));
+  transform: rotateZ(60deg) translate(-2em, 5em);
+}
+button:hover{
+	width: 160px;
+	height: 70px;
+	right: 10;
+}
+button:hover::after{
+  animation: sheen 2s forwards;
+}
+@keyframes sheen {
+  100% {
+    transform: rotateZ(80deg) translate(1em, -9em);
+  }
+}
+.valid{
+	display: none;
+	background-color: #CFDCE4;
+	color: #131C2E;
+	font-size: 1.5em;
+	text-align: center;
+	margin-bottom: 100px;
+}
+.error{
+	display: none;
+	background-color: #CFDCE4;
+	color: #AB0032;
+	font-size: 1.5em;
+	text-align: center;
+	margin-bottom: 100px;
+}
+@media screen and (max-width: 1400px){
+	.form{
+		padding: 0 12.5%;
+	}
+	#email, #sujet, #nom{
+		height: 30px;
+		margin: 20px 0;
+	}
+}
+
+@media screen and (min-width: 1400px){
+	#nom{
+		margin-top: 30px;
+	}
+	#message{
+		margin: 50px 0 20px 0;
+	}
+}

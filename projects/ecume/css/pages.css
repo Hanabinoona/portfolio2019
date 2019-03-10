@@ -1,0 +1,44 @@
+/*header*/
+header{
+	background: url(../img/header.png) fixed no-repeat;
+	text-align: center;
+	width:100%;
+	height: 150px;
+}
+header #logo{
+	width: 150px;
+	height: auto;
+}
+h1{
+	text-align: center;
+	padding-top: 50px;
+	font-size: 40px;
+	padding: 50px 0;
+}
+/*footer*/
+footer{
+	margin-top: 5px;
+	width: 100%;
+	height: 50px;
+	background: #131C2E;
+	text-align: center;
+	position: relative;
+	bottom: 0;
+	left: 0;
+}
+footer .lien{
+	padding-top: 10px;
+}
+footer img{
+	width: 34px;
+	height: auto;
+}
+footer #twitter, #instagram, #mail{
+	margin-left: 20px;
+	color: #CFDCE4;
+	text-decoration: none;
+}
+footer #facebook{
+	color: #CFDCE4;
+	text-decoration: none;
+}
